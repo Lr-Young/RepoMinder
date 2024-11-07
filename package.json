@@ -6,12 +6,26 @@
   "engines": {
     "vscode": "^1.95.0"
   },
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/Lr-Young/RepoMinder"
+	},
   "categories": [
-    "Other"
+    "AI",
+    "Chat"
   ],
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "chatParticipants": [
+      {
+        "id": "repominder",
+        "name": "repominder",
+        "fullName": "RepoMinder",
+        "description": "answer developer questions about the code repo considering the related context from the repo",
+        "isSticky": true
+      }
+    ],
     "commands": [
       {
         "command": "repominder.helloWorld",
